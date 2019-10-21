@@ -1,0 +1,20 @@
+echo "# MyAppClient" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/shaijukumar/MyAppClient.git
+git push -u origin master
+
+=================
+
+Push changes in git
+===================
+Git add . 
+git commit -m "Change"
+git push origin master
+
+To Clone
+=========
+1. Ctrl+Shift+P to show the Command Palette.
+2. Execute the Git: Clone command. 
+3. Paste in the URL to your repo and press Enter. - https://github.com/shaijukumar/MyAppClient

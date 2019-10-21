@@ -1,0 +1,7 @@
+AppList
+    AppListConfig        
+    AppListDetails
+        ListView
+            ListItem
+
+    
