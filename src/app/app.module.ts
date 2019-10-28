@@ -9,6 +9,7 @@ import { AppListComponent } from './app-list/app-list.component';
 import { AppListItemComponent } from './app-list-item/app-list-item.component';
 import { ListConfigComponent } from './list-config/list-config.component';
 import { AppListDetailsComponent } from './app-list-details/app-list-details.component';
+import { AppFieldComponent } from './app-field/app-field.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { AppListDetailsComponent } from './app-list-details/app-list-details.com
     AppListComponent,
     AppListItemComponent,
     ListConfigComponent,
-    AppListDetailsComponent
+    AppListDetailsComponent,
+    AppFieldComponent
   ],
   imports: [
     BrowserModule,

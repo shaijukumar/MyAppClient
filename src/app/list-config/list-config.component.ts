@@ -48,4 +48,8 @@ export class ListConfigComponent implements OnInit {
     this.service.addNewField();
   }
 
+  deleteField(){
+    //this.service.deleteField();
+  }
+
 }

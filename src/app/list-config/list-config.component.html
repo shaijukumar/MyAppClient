@@ -29,30 +29,46 @@
     </div>
 
     <div style="padding-bottom: 50px" >
-      <div  *ngFor="let item of service.appFieldList" class="border" > <!-- *ngFor="let item of service.appFieldList"-->
+      <div  *ngFor="let field of service.appFieldList" class="border" > <!-- *ngFor="let item of service.appFieldList"-->
         <div class="row" >
-          <div class="col-sm-3" >
-              <form>
-              <div class="form-group">
-                  <label for="alterEgo">Type</label>
-                  <select  class="form-control" id="Description"
-                      [(ngModel)]="item.FieldType" name="Description">
-                      <option value="Text">Text</option>
-                      <option value="Option">Option</option>
-                      <option value="Date">Date</option>
-                      <option value="Attachment">Attachment</option>
-                    </select> 
-                  
-                </div>
-              </form>
-          </div>
           
+            <div class="col-sm-1" >
+                <div class="form-group">
+                    <label for="alterEgo">Order</label>
+                    <select  class="form-control" id="FieldOrder"
+                        [(ngModel)]="field.FieldOrder" name="FieldOrder">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>                   
+                  </div>                                                                                                 
+            </div>
+            <div class="col-sm-3" >                
+                <div class="form-group">
+                    <label for="alterEgo">Type</label>
+                    <select  class="form-control" id="Description"
+                        [(ngModel)]="field.FieldType" name="Description">
+                        <option value="Text">Text</option>
+                        <option value="Option">Option</option>
+                        <option value="Date">Date</option>
+                        <option value="Attachment">Attachment</option>
+                      </select>                   
+                  </div>
+                
+            </div>  
+              
+        </div>
+        <div class="row" >
+            <div class="col-sm-3" >
+                <button type="button" class="btn btn-link" (click)="deleteField(field)">Delete</button> 
+            </div>
         </div>
       </div>
     </div>
 
    
-    
+    <span class="badge">5</span>
 
 </div>
 

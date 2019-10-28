@@ -1,0 +1,19 @@
+({{id}} ) - ( {{listId}})
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label for="alterEgo">Type</label>
+            <select  class="form-control" id="Description"
+                [(ngModel)]="service.appFieldItem.FieldType" name="Description">
+                <option value="Text">Text</option>
+                <option value="Option">Option</option>
+                <option value="Date">Date</option>
+                <option value="Attachment">Attachment</option>
+            </select>                   
+        </div>
+
+        <button type="submit" class="btn btn-light  btn-sm" (click)="addItem()">Submit</button>
+        <button type="submit" class="btn btn-light  btn-sm" (click)="goBack()">Back</button>
+        <button (click)="DeleteListItem(service.appListItem.AppListID)" class="btn btn-sm btn-outline-danger">Delete</button> 
+    </form>
+</div>
