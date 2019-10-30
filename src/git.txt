@@ -13,6 +13,11 @@ Git add .
 git commit -m "Change"
 git push origin master
 
+================
+get latest
+============
+geit pull origin master
+
 To Clone
 =========
 1. Ctrl+Shift+P to show the Command Palette.
