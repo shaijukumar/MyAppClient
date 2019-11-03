@@ -44,12 +44,8 @@ export class ListConfigComponent implements OnInit {
     this.router.navigate(['']);
   }
 
-  addNewField(){
-    this.service.addNewField();
-  }
-
   deleteField(){
     //this.service.deleteField();
   }
-
+ 
 }

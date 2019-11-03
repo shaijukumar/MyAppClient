@@ -14,9 +14,9 @@ export class AppFieldComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private router: Router, private service: AppListService) { }
 
-  ngOnInit() {
+  ngOnInit() { 
     this.sub = this.route.params.subscribe(params => {
-      
+      //debugger;
       if(params['id']){        
         this.id = params['id']; 
       } else {      
@@ -39,10 +39,16 @@ export class AppFieldComponent implements OnInit {
   }
 
   goBack(){
-    this.router.navigate(['/ListConfig/']);
+    this.router.navigate(['/ListConfig/' + this.listId ]);
   }
 
   DeleteListItem(id:Number){
       
   }
+
+  addNewField(){
+    this.service.addNewField();
+  }
+
+  
 }

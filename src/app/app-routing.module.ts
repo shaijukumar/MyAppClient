@@ -8,15 +8,15 @@ import { AppListDetailsComponent } from './app-list-details/app-list-details.com
 import { AppFieldComponent } from './app-field/app-field.component';
 
 const routes: Routes = [  { path: '', component: AppListComponent },
-                          { path: 'NewList', component: AppListItemComponent },
+                          { path: 'NewList', component: ListConfigComponent },
                           { path: 'ListConfig/:id', component: ListConfigComponent },                          
                           { path: 'Lists/:id', component: AppListDetailsComponent },                          
                           { path: 'CreateField/:listId', component: AppFieldComponent },
-                          { path: 'EditField/:id', component: AppFieldComponent } ];
+                          { path: 'EditField/:listId/:id', component: AppFieldComponent } ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 
-export class AppRoutingModule { }
+export class AppRoutingModule { } 

@@ -9,7 +9,7 @@
         <th></th>
       </tr>
     </thead>
-    <tr *ngFor="let item of service.appList" >
+    <tr *ngFor="let item of service.appList; let i = index" >
         <td>{{item.AppListID}}</td>
         <td><a href="\Lists\{{item.AppListID}}">{{item.Title}}</a></td>    
         <td>{{item.Description}}</td>    

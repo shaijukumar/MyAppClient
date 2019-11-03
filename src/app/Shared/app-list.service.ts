@@ -125,16 +125,14 @@ export class AppListService {
   }
 
   addNewField(){
+    console.log('showNewField');      
+    if(!this.appFieldList){
+      this.appFieldList = [];
+    }
 
-    console.log('showNewField');
-      
-      if(!this.appFieldList){
-        this.appFieldList = [];
-      } 
-
-      let appField = new AppField();
-      appField.FieldOrder = this.appFieldList.length + 1;
-      this.appFieldList.push(appField); 
+    let appField = new AppField();
+    appField.FieldOrder = this.appFieldList.length + 1;
+    this.appFieldList.push(appField); 
   }
 
   deleteField(field : AppField){
