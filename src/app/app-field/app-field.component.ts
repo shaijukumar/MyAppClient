@@ -49,6 +49,5 @@ export class AppFieldComponent implements OnInit {
   addNewField(){
     this.service.addNewField();
   }
-
   
 }
